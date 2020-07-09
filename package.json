@@ -1,0 +1,10 @@
+{
+  "license": "Apache-2.0",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "dcc-client": "^0.1.0",
+    "eris": "^0.13.3"
+  }
+}

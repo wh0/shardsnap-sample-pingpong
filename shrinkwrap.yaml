@@ -1,0 +1,46 @@
+dependencies:
+  dcc-client: 0.1.0
+  eris: 0.13.3
+packages:
+  /dcc-client/0.1.0:
+    dependencies:
+      ws: 7.3.1
+    dev: false
+    resolution:
+      integrity: sha512-RkoCzT3F3N2bg6oe45hA0hOJW1Kud9YrBstJEoQx2+k80phsOzRm1M4p/6CwXYreA/dY9ot0NAvgW84g1wuAiQ==
+  /eris/0.13.3:
+    dependencies:
+      ws: 7.3.1
+    dev: false
+    engines:
+      node: '>=8.0.0'
+    optionalDependencies:
+      opusscript: 0.0.7
+      tweetnacl: 1.0.3
+    resolution:
+      integrity: sha512-WBtLyknOWZpYZL9yPhez0oKUWvYpunSg43hGxawwjwSf3gFXmbEPYrT8KlmZXtpJnX16eQ7mzIq+MgSh3LarEg==
+  /opusscript/0.0.7:
+    dev: false
+    optional: true
+    resolution:
+      integrity: sha512-DcBadTdYTUuH9zQtepsLjQn4Ll6rs3dmeFvN+SD0ThPnxRBRm/WC1zXWPg+wgAJimB784gdZvUMA57gDP7FdVg==
+  /tweetnacl/1.0.3:
+    dev: false
+    optional: true
+    resolution:
+      integrity: sha512-6rt+RN7aOi1nGMyC4Xa5DdYiukl2UWCbcJft7YhxReBGQD7OAM8Pbxw6YMo4r2diNEA8FEmu32YOn9rhaiE5yw==
+  /ws/7.3.1:
+    dev: false
+    engines:
+      node: '>=8.3.0'
+    peerDependencies:
+      bufferutil: ^4.0.1
+      utf-8-validate: ^5.0.2
+    resolution:
+      integrity: sha512-D3RuNkynyHmEJIpD2qrgVkc9DQ23OrN/moAwZX4L8DfvszsJxpjQuUq3LMx6HoYji9fbIOBY18XWBsAux1ZZUA==
+registry: 'https://registry.npmjs.org/'
+shrinkwrapMinorVersion: 9
+shrinkwrapVersion: 3
+specifiers:
+  dcc-client: ^0.1.0
+  eris: ^0.13.3
