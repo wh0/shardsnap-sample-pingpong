@@ -4,7 +4,7 @@ const dcc = require('dcc-client');
 const eris = require('eris');
 
 const config = {
-  alias: 'sample_pingpong',
+  alias: process.env.PROJECT_DOMAIN,
   token: process.env.DISCORD_TOKEN,
   intents: eris.Constants.Intents.guildMessages | eris.Constants.Intents.directMessages,
   criteria: {
