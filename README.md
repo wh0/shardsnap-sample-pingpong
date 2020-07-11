@@ -16,7 +16,7 @@ Let's try not to be that someone.
 2. Set your desired project name.
 3. Run
    ```sh
-   "admin:$(head -c16 /dev/urandom | base64)"
+   echo "admin:$(head -c16 /dev/urandom | base64)"
    ```
    in the project terminal, get the result, and put it in `DCC_SECRET` in `.env`.
 4. Create an application in the
