@@ -1,6 +1,6 @@
 dependencies:
   dcc-client: 0.1.0
-  eris: 0.13.3
+  eris: 0.14.0
 packages:
   /dcc-client/0.1.0:
     dependencies:
@@ -8,7 +8,7 @@ packages:
     dev: false
     resolution:
       integrity: sha512-RkoCzT3F3N2bg6oe45hA0hOJW1Kud9YrBstJEoQx2+k80phsOzRm1M4p/6CwXYreA/dY9ot0NAvgW84g1wuAiQ==
-  /eris/0.13.3:
+  /eris/0.14.0:
     dependencies:
       ws: 7.3.1
     dev: false
@@ -18,7 +18,7 @@ packages:
       opusscript: 0.0.7
       tweetnacl: 1.0.3
     resolution:
-      integrity: sha512-WBtLyknOWZpYZL9yPhez0oKUWvYpunSg43hGxawwjwSf3gFXmbEPYrT8KlmZXtpJnX16eQ7mzIq+MgSh3LarEg==
+      integrity: sha512-/W6X0SFR2swtA9oc4ga5Wh1TQcZtPgbUaDDdwYc67fvFUAtwC+V1xzWUZq2yDeJnTfB8Uot9SJWA8Lthe2sDtQ==
   /opusscript/0.0.7:
     dev: false
     optional: true
@@ -43,4 +43,4 @@ shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
   dcc-client: ^0.1.0
-  eris: ^0.13.3
+  eris: ^0.14.0
