@@ -24,7 +24,7 @@ const config = {
   },
   dst: 'wss://' + process.env.PROJECT_DOMAIN + '.glitch.me/dcc/v1/any',
   clientSecret: process.env.DCC_SECRET,
-  endpoint: 'https://dcc.wh00.ml',
+  endpoint: 'https://ocdcc.wh00.ml',
 };
 
 //
