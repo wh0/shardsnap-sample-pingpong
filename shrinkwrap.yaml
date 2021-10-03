@@ -1,16 +1,10 @@
 dependencies:
-  dcc-client: 0.1.1
   eris: 0.14.1
+  shardsnap: 0.2.0
 packages:
-  /dcc-client/0.1.1:
-    dependencies:
-      ws: 7.4.6
-    dev: false
-    resolution:
-      integrity: sha512-AlSLVhukRkG61XK0naHg6MeoIewvxCpZTRFbtK0BXtnkdPTacSTZjKrRO2wsaq2In08i6FAPzm0ApgGANl2wCg==
   /eris/0.14.1:
     dependencies:
-      ws: 7.4.6
+      ws: 7.5.5
     dev: false
     engines:
       node: '>=8.0.0'
@@ -24,12 +18,18 @@ packages:
     optional: true
     resolution:
       integrity: sha512-DcBadTdYTUuH9zQtepsLjQn4Ll6rs3dmeFvN+SD0ThPnxRBRm/WC1zXWPg+wgAJimB784gdZvUMA57gDP7FdVg==
+  /shardsnap/0.2.0:
+    dependencies:
+      ws: 7.5.5
+    dev: false
+    resolution:
+      integrity: sha512-EZ4ueF2+kQtVVSaxbLPH2kMKu1wKhLvw8TR0Cc6sVcW6kSb+7L2xKX9hKxbIBOyORrGxOZkDf47IVeSsV5SONg==
   /tweetnacl/1.0.3:
     dev: false
     optional: true
     resolution:
       integrity: sha512-6rt+RN7aOi1nGMyC4Xa5DdYiukl2UWCbcJft7YhxReBGQD7OAM8Pbxw6YMo4r2diNEA8FEmu32YOn9rhaiE5yw==
-  /ws/7.4.6:
+  /ws/7.5.5:
     dev: false
     engines:
       node: '>=8.3.0'
@@ -37,10 +37,10 @@ packages:
       bufferutil: ^4.0.1
       utf-8-validate: ^5.0.2
     resolution:
-      integrity: sha512-YmhHDO4MzaDLB+M9ym/mDA5z0naX8j7SIlT8f8z+I0VtzsRbekxEutHSme7NPS2qE8StCYQNUnfWdXta/Yu85A==
+      integrity: sha512-BAkMFcAzl8as1G/hArkxOxq3G7pjUqQ3gzYbLL0/5zNkph70e+lCoxBGnm6AW1+/aiNeV4fnKqZ8m4GZewmH2w==
 registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
-  dcc-client: ^0.1.1
   eris: ^0.14.0
+  shardsnap: ^0.2.0

@@ -4,7 +4,7 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "dcc-client": "^0.1.1",
+    "shardsnap": "^0.2.0",
     "eris": "^0.14.0"
   },
   "engines": {

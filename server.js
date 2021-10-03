@@ -1,6 +1,6 @@
 const http = require('http');
 
-const dcc = require('dcc-client');
+const shardsnap = require('shardsnap');
 const eris = require('eris');
 
 const config = {
@@ -22,8 +22,8 @@ const config = {
       {'d.content': {$regex: '^!'}},
     ],
   },
-  dst: 'wss://' + process.env.PROJECT_DOMAIN + '.glitch.me/dcc/v1/any',
-  clientSecret: process.env.DCC_SECRET,
+  dst: 'wss://' + process.env.PROJECT_DOMAIN + '.glitch.me/shardsnap/v1/any',
+  clientSecret: process.env.SHARDSNAP_SECRET,
   endpoint: 'https://ocdcc.wh00.ml',
 };
 
@@ -46,7 +46,7 @@ function logReject(p) {
 }
 
 // we're using Eris in this example. configure it not to connect to the gateway. we'll be receiving
-// events from dc-chartreuse in this setup. we won't have the gateway to tell us that this token is
+// events from shardsnap in this setup. we won't have the gateway to tell us that this token is
 // a bot, so we need to add that `Bot ` prefix explicitly
 const bot = new eris.Client('Bot ' + config.token, {restMode: true});
 bot.on('debug', (message, id) => {
@@ -59,8 +59,8 @@ bot.on('error', (err, id) => {
   console.error('bot error', err, id);
 });
 
-const client = new dcc.Client(config.alias, config.clientSecret, {
-  path: '/dcc/v1/any',
+const client = new shardsnap.Client(config.alias, config.clientSecret, {
+  path: '/shardsnap/v1/any',
   server,
 });
 client.on('dispatch', (packet) => {
@@ -78,7 +78,7 @@ client.on('dispatch', (packet) => {
 
 server.listen(process.env.PORT, () => {
   console.log('listening', process.env.PORT);
-  dcc.register(config).then(() => {
+  shardsnap.register(config).then(() => {
     console.log('register ok');
   }).catch((e) => {
     console.error('register failed', e);
