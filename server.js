@@ -65,7 +65,10 @@ const client = new shardsnap.Client(config.alias, config.clientSecret, {
 });
 client.on('dispatch', (packet) => {
   if (packet.d.content.startsWith('!ping')) {
-    logReject(bot.createMessage(packet.d.channel_id, 'pong'));
+    logReject(bot.createMessage(packet.d.channel_id, {
+      content: 'pong',
+      messageReference: {messageID: packet.d.id},
+    }));
     return;
   }
 
