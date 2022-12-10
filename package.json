@@ -4,10 +4,10 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "shardsnap": "^0.2.0",
-    "eris": "^0.14.0"
+    "shardsnap": "^0.2.1",
+    "eris": "^0.17.1"
   },
   "engines": {
-    "node": ">=10"
+    "node": ">=16"
   }
 }
